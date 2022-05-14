@@ -1,11 +1,13 @@
-@import "./utils/vars";
+@import "./utils/variables";
+@import "./utils/hidden";
+@import "./base/common";
 @import "./base/reset";
 @import "./components/container";
 @import "./components/section";
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/backdrop";
+@import "./utils/backdrop";
 @import "./layout/modal";
 @import "./layout/feature";
 @import "./layout/about";

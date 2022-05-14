@@ -30,14 +30,12 @@
         border-color;
     transition-duration: var(--typical-time-transition);
     transition-timing-function: var(--typical-cubic-bezier);
-}
-
-.client__link:hover {
-    border: 1px solid #2196F3;
-    fill: var(--main-color);
-}
-
-.client__link:focus {
-    border: 1px solid #2196F3;
-    fill: var(--main-color);
-}
+    &:hover {
+            border: 1px solid #2196F3;
+            fill: var(--main-color);
+        }
+        &:focus {
+            border: 1px solid #2196F3;
+            fill: var(--main-color);
+        }
+    }
