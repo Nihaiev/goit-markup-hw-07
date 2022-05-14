@@ -416,6 +416,10 @@ ul {
   transition-timing-function: var(--typical-cubic-bezier);
 }
 
+.input-check:focus + .check-text span {
+  border-color: var(--main-color);
+}
+
 .input-check:checked + .check-text span {
   background-color: var(--main-color);
   border: none;
