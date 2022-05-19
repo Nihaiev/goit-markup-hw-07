@@ -298,12 +298,10 @@ ul {
   transition-duration: var(--typical-time-transition);
   transition-timing-function: var(--typical-cubic-bezier);
 }
-
-.modal-icon-exit:hover {
+.modal-btn-exit:hover .modal-icon-exit {
   fill: var(--main-color);
 }
-
-.modal-icon-exit:focus {
+.modal-btn-exit:focus .modal-icon-exit {
   fill: var(--main-color);
 }
 
@@ -335,7 +333,7 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-  transition-property: border-color, fill;
+  transition-property: border-color;
   transition-duration: var(--typical-time-transition);
   transition-timing-function: var(--typical-cubic-bezier);
 }
@@ -375,6 +373,9 @@ ul {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: var(--typical-time-transition);
+  transition-timing-function: var(--typical-cubic-bezier);
 }
 
 .modal-field {
@@ -411,7 +412,7 @@ ul {
 
 .check-icon {
   fill: transparent;
-  transition-property: fill;
+  transition-property: border-color, fill;
   transition-duration: var(--typical-time-transition);
   transition-timing-function: var(--typical-cubic-bezier);
 }

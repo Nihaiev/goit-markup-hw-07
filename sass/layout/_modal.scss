@@ -46,15 +46,13 @@
     transition-property: fill;
     transition-duration: var(--typical-time-transition);
     transition-timing-function: var(--typical-cubic-bezier);
-}
-
-.modal-icon-exit:hover {
-    fill: var(--main-color);
-}
-
-.modal-icon-exit:focus {
-    fill: var(--main-color);
-}
+    &:hover .modal-icon-exit {
+            fill: var(--main-color);
+        }
+    &:focus .modal-icon-exit {
+            fill: var(--main-color);
+        }
+    }
 
 .modal-title {
     font-weight: 700;
@@ -84,7 +82,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
-    transition-property: border-color, fill;
+    transition-property: border-color;
     transition-duration: var(--typical-time-transition);
     transition-timing-function: var(--typical-cubic-bezier);
     &:focus {
@@ -128,6 +126,9 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: var(--typical-time-transition);
+    transition-timing-function: var(--typical-cubic-bezier);
 }
 
 .modal-field {
@@ -166,7 +167,7 @@
 
 .check-icon {
     fill: transparent;
-    transition-property: fill;
+    transition-property: border-color, fill;
     transition-duration: var(--typical-time-transition);
     transition-timing-function: var(--typical-cubic-bezier);
 
